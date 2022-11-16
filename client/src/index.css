@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  background-color: aliceblue;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-container {
+/*   background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 3px; */
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 5px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 290px;
+}
+
+.timepicker {
+  width : 100%;
+  margin-top: 5px;
+  background-color: white;
+}
+
+/* .board {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: auto;
+  grid-auto-flow: row;
+} */
+
+.trip-container:hover {
+  background-color: #F5F5F5;
+}
+
+.leg__part {
+  display: flex;
+  justify-content: space-between;
+}
+
+.minimized-legs-container {
+  display: flex; 
+  align-items: center;
+}
+
+/* .minimized-content__item {
+  margin: 2px;
+} */
+
+.minimized-legs-container__destination {
+  flex-grow: 1;
+}
+
+.arrowIcon {
+  margin: 0 5px;
+}
+
+@media only screen and (min-width: 380px) {
+  .app {
+    width: 380px;
+  }
+  }

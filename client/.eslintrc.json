@@ -1,0 +1,35 @@
+{
+  "extends": [
+    "salt",
+    "salt/react"
+  ],
+  "rules": {
+    "react/jsx-closing-bracket-location": [
+      "error",
+      {
+        "selfClosing": "after-props",
+        "nonEmpty": "after-props"
+      }
+    ],
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [
+          ".js"
+        ]
+      }
+    ],
+    "react/prop-types": "off",
+    "no-underscore-dangle": ["error", { "allow": ["_d"] }],
+    "react/jsx-props-no-spreading": ["error", {
+      "custom": "ignore"
+  }]
+  },
+  "plugins": [
+    "mui"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  }
+}

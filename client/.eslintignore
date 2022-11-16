@@ -1,0 +1,11 @@
+/server/public/javascript/*
+/cypress/integration/*
+/cypress/plugins/*
+/cypress/shared/*
+/cypress/support/*
+webpack.config.js
+reportWebVitals.js
+/server/config
+src/index.js
+node_modules
+client/build
