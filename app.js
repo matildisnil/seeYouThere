@@ -65,7 +65,7 @@ const getTrip = async (fromCode, toCode, time, person) => {
 
 
 
-app.get('/api/trips', async (req, res, next) => {
+app.get('/api/trips', async (req, res) => {
   try {
     const from1 = req.query.from1;
     const from2 = req.query.from2;
