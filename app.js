@@ -1,11 +1,11 @@
 const express = require('express');
 const cors = require("cors");
 const app = express();
-// const controller = require("./controller.js");
+const controller = require("./controller.js");
 // require('dotenv').config();
 
 app.use(express.static('static'));
-// express.urlencoded({ extended: false });
+express.urlencoded({ extended: false });
 
 // if (process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test') {
 //   const whitelist = ["http://localhost:3000"]
@@ -22,7 +22,7 @@ app.use(express.static('static'));
 //   app.use(cors(corsOptions));
 // }
 
-// app.get('/api/trips', controller.trips);
+app.get('/api/trips', controller.trips);
 
 app.get('/test',(req,res) => {
   res.json({'message': 'hello'});
