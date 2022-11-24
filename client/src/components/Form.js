@@ -45,7 +45,6 @@ const Form = ({ setTripState }) => {
         throw new Error(parsedData.message);
       }
       setTripState(parsedData);
-      // window.scrollTo(0, 500);
     } catch (err) {
       setErrMessage(err.message);
     }

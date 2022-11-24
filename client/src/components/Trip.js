@@ -20,7 +20,6 @@ const Trip = ({ partialTripState, person }) => {
       <div>
         {isExpanded
           ? <ExpandedLegContainer partialTripState={partialTripState} />
-        /* partialTripState.map((element, index) => <Leg legState={element} key={index} /> */
           : <MinimizedLegContainer partialTripState={partialTripState} />}
       </div>
     </Box>

@@ -6,7 +6,7 @@ const ExpandedLegContainer = ({ partialTripState }) => (
     {partialTripState.map((element, index) => (
       <Leg
         legState={element}
-          // eslint-disable-next-line react/no-array-index-key
+        // eslint-disable-next-line react/no-array-index-key
         key={index + element.destName}
         index={index} />
     ))}

@@ -5,7 +5,6 @@ import Form from './components/Form';
 
 function App() {
   const [tripState, setTripState] = useState(null);
-  // console.log(tripState);
   return (
     <div className="app">
       <Form setTripState={setTripState} />
