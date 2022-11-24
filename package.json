@@ -9,8 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=development nodemon .",
-    "start": "node .",
-    "withMock": "cross-env NODE_ENV=test nodemon ."
+    "start": "node ."
   },
   "repository": {
     "type": "git",
