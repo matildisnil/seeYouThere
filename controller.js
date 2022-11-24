@@ -1,4 +1,4 @@
-const lib = require("./library");
+const lib = require("./library.js");
 
 module.exports.trips = async (req, res) => {
   try {
