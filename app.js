@@ -24,8 +24,4 @@ if (process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test') {
 
 app.get('/api/trips', trips);
 
-app.get('/test',(req,res) => {
-  res.json({'message': 'hello'});
-})
-
 module.exports.app = app;
